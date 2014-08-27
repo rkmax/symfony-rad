@@ -7,3 +7,7 @@
 /vendor/
 /bin/
 /composer.phar
+
+# Symfony 2.5 files
+/app/check.php
+/app/SymfonyRequirements.php

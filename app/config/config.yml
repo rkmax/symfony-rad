@@ -32,6 +32,10 @@ assetic:
     bundles: [ ]
     filters:
         cssrewrite: ~
+        scssphp:
+            apply_to: '\.scss$'
+            formatter: 'compressed'
+            preserve_comments: false
 
 doctrine:
     dbal:

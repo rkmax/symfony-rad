@@ -1,43 +1,45 @@
-# Symfony Empty Edition
+# Symfony RAD Edition
 
-The same as [Symfony Standard Edition](https://github.com/symfony/symfony-standard),
-only lighter and ready to be used (no removal/customization steps required).
+Basado en  [Symfony Empty Edition](https://github.com/gnugat/symfony-empty),
+que es bastante ligera, se han agregado una serie de bundles practicamente que se usan en
+todos los proyectos que estoy desarrollando ahora
 
-## Installation
+## Instalación
+
+Para crear una nueva aplicacion usando esta distribucion, descarga una copia de
 
 To create a new Symfony application using this distribution, get a copy of
-[Composer](http://getcomposer.org/) and use its `create-project` command:
+[Composer](http://getcomposer.org/) y usa el comando `create-project`:
 
     curl -sS https://getcomposer.org/installer | php
-    ./composer.phar create-project gnugat/symfony-framework-empty-edition path/to/install
+    ./composer.phar create-project rkmax/symfony-rad ruta/donde/instalar
 
-Then you just need to:
+Entonces solo reemplaza:
 
-1. replace `README.md` and `LICENSE`
-2. start coding!
+1. reemplaza`README.md` y `LICENSE`
+2. a programar!
 
-**Note**: you could bootstrap your project's markdown files (`README.md`,
-`LICENSE`, `doc/02-installation.md`, etc) using [fossil](https://github.com/gnugat/fossil):
+## Diferencias con la edición estandar
 
-    curl -sS https://raw.github.com/gnugat/fossil/master/bin/installer.sh | sh
-    fossil doc -f 'github/repo' 'Owner name for copyright'
-
-## Differences with the standard edition
-
-- no AcmeDemoBundle
-- no Swiftmailer
-- no twig-extension
-- no Symfony requirement/configuration scripts
-- no extra code/configuration comments
-- no cache kernel
-- no firephp monolog handler
-- no chromephp monolog handler
-- no Symfony markdown files (except `LICENSE` and `README.md`)
-* empty (blank) favicons
-* using PHP 5.3.17+
+- sin AcmeDemoBundle
+- sin Swiftmailer
+- sin twig-extension
+- sin Symfony requirement/configuration scripts
+- sin extra code/configuration comments
+- sin cache kernel
+- sin firephp monolog handler
+- sin chromephp monolog handler
+- Sin archivos markdown de symfony (except `LICENSE` and `README.md`)
+* favicons en blanco
+* usa PHP 5.3.17+
 * vendor binaries in `vendor/bin` instead of `bin`
 * uniformized syntax in configuration
 + enabled translator fallback
+* FOSRestBundle
+* JMSSerializerBundle
+* JMSDiExtraBundle
+* FOSJsRoutingBundle
+* Habilitado filtro para archivos .scss en AsseticBundle
 
 ## Further documentation
 
